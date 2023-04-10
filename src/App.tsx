@@ -6,11 +6,11 @@ import './App.css';
 function App() {
   const todos =[
     new Todo('aprendendo react'),
-    new Todo('aprendendo com typescript'),
+    new Todo('aprendendo com typescript'), 
   ];
   return (
     <div className="App">
-      <Todos items={['learn react','i love react']}/>
+      <Todos items={todos}/>
     </div>
   );
 }

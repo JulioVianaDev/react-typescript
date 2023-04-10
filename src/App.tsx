@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Todos/>
+      <Todos items={['learn react','i love react']}/>
     </div>
   );
 }

@@ -1,9 +1,11 @@
 import React from "react";
 
-function Todos(){
+const  Todos: React.FC<{items: string[]}> = (props)=>{
   return(
     <ul>
-      <li>aprendendo</li>
+      {props.items.map(item=>(
+        <li key={item}>{item}</li>
+      ))}
     </ul>
   )
 }
